@@ -7,7 +7,13 @@ function click(e){
 $(function(){
     $('.main-carousel').flickity({
         // options
-        cellAlign: 'left',
+        cellAlign: 'center',
+        prevNextButtons: false,
+        wrapAround:true,
+        autoPlay:true,
+        fade:true,
+        lazyLoad:true,
+        pageDots: false,
         contain: true
       });
 });

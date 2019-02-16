@@ -46,8 +46,8 @@ header{
     margin:5px;
     padding:5px;
     display: flex;
-   justify-content: center;
-   position: relative;
+    justify-content: center;
+    position: relative;
 }
 .nav_bar ul li a{
     padding:5px;
@@ -265,7 +265,7 @@ header{
     padding-top:10px;
     color:white;
     letter-spacing: 2px;
-    margin:4% auto;
+    margin:2% auto;
 }
 
 .project h2{
@@ -337,7 +337,7 @@ header{
 /* demo */
 .demo{
     max-width:300px;
-    width:1005;
+    width:100%;
     margin: 20px auto;
 }
 .demo a{
@@ -387,12 +387,13 @@ header{
 /* portfolio snap */
 .portfolio_snap{
     width:50%;
+    box-shadow: 20px 10px 20px black;
 }
 .portfolio_snap img{
     width:100%;
     max-width:100%;
     display: block;
-    border:5px solid black;
+    border:1px solid black;
 }
 @media(max-width:790px){
     .portfolio{
@@ -423,20 +424,209 @@ header{
 .portfolio_des:hover{
     transform: rotateY(20deg)
 }
-.main-carousel {
-   border:5px solid #4a7491;
-   background-color:black;
-  }
-  
-  .carousel-cell {
-    width: 100%;
-    height: 160px;
-    margin-right: 10px;
+
+/* section 3 starts */
+.wrap_three{
+    border-left:5px solid #4a7491;
+    border-right:5px solid #4a7491;
+    border-radius: 5%;
+    box-shadow: 10px 10px 20px #4a7491;
     
-    border-radius: 5px;
-    counter-increment: gallery-cell;
-  }
+}
+/* working skills */
+.skills{
+    max-width:1000px;
+    width:100%;
+    margin:1% auto;
+}
+.skills span{
+    font-size:2rem;
+    text-transform: capitalize;
+    font-weight:500;
+    letter-spacing: 2px;
+    max-width:300px;
+    padding-bottom:10px;
+    display: block;
+    text-align: center;
+    margin:20px;
+    border-bottom:5px solid #4a7491;
+    text-shadow:-5px 5px 10px #4a7491;
+}
+.main-carousel {
+    max-width: 90%;
+    height:150px;
+    width:100%;
+    margin:30px auto;
+}
   
-   .carousel-cell i{
-      font-size:15rem;
+.carousel-cell{
+    width: 100%;
+    max-width:250px;
+    border:2px solid black;
+    background-color:black;
+    height: inherit;
+    border-radius:2%;
+    margin:0px 5px;
+    padding:15px 0px;
+    text-align: center;
+    font-size:12rem;   
+}
+.carousel-cell.is-selected {
+    background:white;
   }
+  /* learning & using */
+.skills_secondary{
+    display:flex;
+    max-width:600px;
+    width:100%;
+    margin:30px auto;
+    justify-content:space-around;
+    padding:15px 0px;
+    height:150px;
+    font-size:10rem;
+}
+
+@media(max-width:790px){
+    .carousel-cell{
+        max-width:180px;
+        font-size:10rem;
+        padding:20x 0;
+    }
+    .skills span{
+        max-width:300px;
+        margin: 30px auto;
+       
+    }
+
+}
+@media(max-width:550px){
+    .carousel-cell{
+        max-width:300px;
+        font-size:12rem;
+        padding:12px 0px;
+    }
+    
+}
+@media(max-width:450px){
+    .skills_secondary{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        max-width:300px;
+        height:auto;
+    }
+    
+}
+
+/* footer starts */
+
+footer{
+    margin-top:2%;
+    background-color:#4a7491;
+}
+.form{
+    border:2px solid white;
+    margin:20px auto;
+}
+.myForm{
+    border:1px solid yellow;
+    max-width: 500px;
+    background-color:#4a7491
+    
+}
+.textbox{
+    border:2px solid white;
+    width:100%;
+    padding:10px;
+    margin:10px;
+    overflow: hidden;
+    position:relative;
+    
+}
+.textbox input, .textbox textarea {
+   
+    width:100%;
+    border:none;
+    border-bottom:2px solid black;
+    outline:none;
+    background-color: #4a7491;
+    padding:15px 0px 15px 40px;
+    box-shadow:0px 5px 10px black;
+}
+::placeholder {
+    letter-spacing: 2px;
+    color:white;
+    opacity: 1; /* Firefox */
+    font-size:2rem;
+    
+  }
+  .submit{
+      border:2px solid white;
+      text-align: right;
+     
+  }
+  .submit button{
+      padding:10px;
+      width:25%;
+      letter-spacing: 2px;
+      background-color: black;
+      color:#4a7491;
+      box-shadow:5px 5px 2px black;
+      
+  }
+  .submit button i{
+    margin-left:5px;
+  }
+  .submit button:hover{
+      background-color:#4a7491;
+      color:black;
+      border:1px solid black;
+  }
+  .textbox i{
+     font-size:3rem;
+      position:absolute;
+      left:15px;
+      top:15px;
+  }
+  /* foot second */
+  .foot_second{
+      background-color:black;
+      color:white;
+      text-align: center;
+      padding-top:10px;
+      font-size:2rem;
+  }
+  .social a i{
+      
+      margin-left:10px;
+      text-decoration: none;
+  }
+  .effect{
+    background: linear-gradient(to right, rgb(236, 110, 163) 20%, rgba(171, 171, 36, 0.6) 40%, #53c5c5 60%, rgb(149, 148, 187) 80% );
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: color 5s linear infinite;
+  }
+    @keyframes color {
+      0% {
+        background-position: 200% center;
+      }
+      50%{
+        background-position:100% 0%;
+      }
+      100%{
+          background-position:0% 100%;
+      }
+    }
+.copyright p{
+    letter-spacing: 2px;
+    margin-bottom:0px;;
+}
+.project{
+    color:white;
+}
