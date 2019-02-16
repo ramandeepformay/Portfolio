@@ -525,18 +525,55 @@ footer{
     margin-top:2%;
     background-color:#4a7491;
 }
-.form{
-    border:2px solid white;
+.note{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height: auto;
+    align-items:center;
+
+}
+.contact_info{
+    max-width:590px;
+    width:100%;
+    padding:20px;
+    align-self:center;
+    text-align: center;
+    margin:5px;
+    letter-spacing: 2px;
+    margin:0 auto;
+}
+.contact_info span{
+    font-size:2rem;
+    color:white;
+    padding:10px;
+    border-bottom: 5px solid black;
+    max-width:450px;
+    width:100%;
+}
+.contact_des{
     margin:20px auto;
+    padding:10px;
+ font-size:1.5rem;
+}
+.contact_des {
+    color:black;
+    padding:5px;
+}
+
+.form{
+    margin:20px auto;
+    max-width:600px;
+    width:100%;
 }
 .myForm{
-    border:1px solid yellow;
-    max-width: 500px;
-    background-color:#4a7491
-    
+    max-width:500px;
+    width:100%;
+    background-color:#4a7491;
+    margin:0 auto;
+    padding:10px;
 }
 .textbox{
-    border:2px solid white;
     width:100%;
     padding:10px;
     margin:10px;
@@ -562,17 +599,17 @@ footer{
     
   }
   .submit{
-      border:2px solid white;
       text-align: right;
-     
+      max-width:100%;
   }
   .submit button{
       padding:10px;
-      width:25%;
+     
       letter-spacing: 2px;
       background-color: black;
       color:#4a7491;
       box-shadow:5px 5px 2px black;
+     
       
   }
   .submit button i{
@@ -584,7 +621,7 @@ footer{
       border:1px solid black;
   }
   .textbox i{
-     font-size:3rem;
+      font-size:3rem;
       position:absolute;
       left:15px;
       top:15px;
@@ -629,4 +666,12 @@ footer{
 }
 .project{
     color:white;
+}
+
+@media(max-width:650px){
+    .note{
+        display:flex;
+        flex-direction:column;
+
+    }
 }
