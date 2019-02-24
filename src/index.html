@@ -18,9 +18,9 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/>
   	</head>
 
-  	<body> 
+  	<body class ="trans"> 
     <!-- Header Starts -->
-		<header>
+		<header id="header">
 		<!-- nav bar -->
 			<div>
 				<div class="nav_toggle">
@@ -28,11 +28,10 @@
 				</div>
 				<nav class="nav_bar">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Skills</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#abt">About</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#skill">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -49,8 +48,8 @@
 		<!-- main starts -->
 		<main>
 		<!-- section 1 starts -->
-			<section>
-				<div class="wrapper">
+			<section id="abt">
+				<div class="wrapper" >
 				<!-- Description -->
 					<div class="about">
 						<h2>
@@ -115,14 +114,14 @@
 					</div>
 				<!-- connect -->
 					<div class="connect">
-						<a href=#>Let's Connect</a>
+						<a href=#contact>Let's Connect</a>
 					</div>
 				</div>
 			</section>
 
 				<!-- section 2 starts -->
 
-			<section class="wrap">
+			<section class="wrap" id="project">
 				<div class="wrapper wrap_second">
 					<!-- project -->
 					<div class="about project">
@@ -146,7 +145,7 @@
 										<!-- demo -->
 										<div class=" demo">
 											<a href="#">Demo</a>
-											<a href="#">Github</a>
+											<a href="https://github.com/ramandeepformay/Travel-HTML-CSS">Github</a>
 										</div>
 									</div>
 								</div>
@@ -185,7 +184,7 @@
 													<!-- demo -->
 											<div class=" demo">
 												<a href="#">Demo</a>
-												<a href="#">Github</a>
+												<a href="https://github.com/ramandeepformay/Food-Passion-HTML-CSS">Github</a>
 											</div>
 										</div>
 									</div>
@@ -217,7 +216,7 @@
 													<!-- demo -->
 											<div class=" demo">
 												<a href="#">Demo</a>
-												<a href="#">Github</a>
+												<a href="https://github.com/ramandeepformay/Woocommerce-HTML-CSS">Github</a>
 											</div>
 										</div>
 									</div>
@@ -258,7 +257,7 @@
 													<!-- demo -->
 											<div class=" demo">
 												<a href="#">Demo</a>
-												<a href="#">Github</a>
+												<a href="https://github.com/ramandeepformay/Budget-Calculator-JS">Github</a>
 											</div>
 										</div>
 									</div>
@@ -277,7 +276,7 @@
 			<!-- section 2 ends-->
 
 			<!-- section 3 starts  -->
-			<section>
+			<section id="skill">
 				<div class="wrapper wrap_three">
 					<div class="about">
 						<h2>Skills</h2>
@@ -341,7 +340,7 @@
 		<!-- main ends -->
 
 		<!-- footer starts -->
-		<footer>
+		<footer id="contact">
 			<div class="wrapper">
 				<div class="about project">
 					<h2>Get In Touch</h2>
@@ -354,6 +353,7 @@
 						<div><a class="contact_des"href=#><i class="fas fa-envelope"></i></a>ramandeepformay@gmail.com </div>
 						<div><i class="contact_des fas fa-mobile-alt"></i>306-4509678</div>
 					</div>
+					<div class="goTop"><a href="#header"><i class="fas fa-angle-up"></i></a></div>
 				</div>
 				<!-- form starts -->
 				<div class="form">
@@ -386,10 +386,10 @@
 			<!-- social  -->
 			<div class="foot_second">
 				<div class="social">
-					<a href=#><i class="effect fab fa-linkedin-in"></i></a>
-					<a href=#><i class="effect fab fa-github"></i></a>
-					<a href=#><i class="effect fab fa-twitter"></i></a>
-					<a href=#><i class="effect fas fa-envelope"></i></a>
+					<a href="https://www.linkedin.com/in/ramandeep-formay-a60747b5/"><i class="effect fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/ramandeepformay"><i class="effect fab fa-github"></i></a>
+					<a href="https://twitter.com/RamandeepForma"y><i class="effect fab fa-twitter"></i></a>
+					<a href="mailto:ramandeepformay@gmail.com"><i class="effect fas fa-envelope"></i></a>
 				</div>
 				<div class="effect copyright">
 					<p>&copy;ramandeep formay</p>
@@ -398,6 +398,7 @@
 		</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>

@@ -14,9 +14,14 @@
     .nav_bar ul li:nth-child(n+2)::before{
         display: none;
     }
+    .myHead h1{
+        font-size:4.5rem;
+    }
+    .myHead span{
+        font-size:2.5rem;
+    }
+
 }
-
-
 //section 1 starts//
 @media(max-width:790px){
     .description{
@@ -102,9 +107,14 @@
 //footer starts//
 
 @media(max-width:650px){
-    .note{
+footer .note{
         display:flex;
         flex-direction:column;
+        align-items: center;
+        justify-content: center;
 
+    }
+    .goTop{
+        display: none;
     }
 }
