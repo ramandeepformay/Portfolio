@@ -345,9 +345,10 @@ header {
 
 .me img {
   width: 100%;
-  max-width: 50%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 250px;
+  float: right; }
 
 /* Education & Facts */
 .about_secondary {
@@ -395,7 +396,8 @@ header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 0; }
 
 .edu_des li span {
   font-weight: 900; }
@@ -880,14 +882,13 @@ footer {
     font-size: 2.5rem; } }
 
 @media (max-width: 790px) {
-  .description {
-    max-width: 1000px;
+  .des_media {
+    max-width: 600px;
     width: 100%;
     margin: 1% auto;
-    padding: 2%;
     text-align: center; }
   .des_first {
-    width: 80%; }
+    width: 100%; }
   .me {
     display: none; }
   .about_secondary {
@@ -905,7 +906,11 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
   .education {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .edu_des > li {
+    margin: 2% auto;
+    padding: 2% 0px;
+    list-style-type: none; } }
 
 @media (max-width: 790px) {
   .portfolio {

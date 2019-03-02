@@ -147,9 +147,10 @@ header{
 }
 .me img{
     width:100%;
-    max-width:50%;
     display: block;
     margin: 0 auto;
+    max-width: 250px;
+    float:right;
 }
 
 /* Education & Facts */
@@ -185,6 +186,7 @@ header{
     justify-content:center;
     align-items: flex-start;
     font-size:1.5rem;
+    padding:0;
 }
 .edu_des li span{
     font-weight:900;

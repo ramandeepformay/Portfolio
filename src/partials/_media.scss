@@ -24,15 +24,14 @@
 }
 //section 1 starts//
 @media(max-width:790px){
-    .description{
-        max-width:1000px;
-        width:100%;
+    .des_media{
+        max-width: 600px;
+        width: 100%;
         margin: 1% auto;
-        padding:2%;
         text-align: center;
     }
     .des_first{
-        width: 80%;
+        width: 100%;
     }
     .me{
         display: none;
@@ -45,6 +44,11 @@
     }
     .education{
        max-width:100%;
+    }
+    .edu_des > li {
+        margin: 2% auto;
+        padding: 2% 0px;
+        list-style-type: none;
     }
 }
 
