@@ -30,11 +30,12 @@ $(function(){
         easing:"swing"
     });
     $(".nav_bar ul li a").on("click", function(){
-        $(".nav_bar ul").hide();
+        $(".nav_bar ul").addClass("passive");
+        
     })
-    $(".nav_toggle").on("click",function(){
-        $(".nav_bar ul").removeAttr("style");
-        $(".nav_bar ul").css({"display":"block"});
+    $(".nav_toggle").on("click", function(){
+        $(".nav_bar ul").removeClass("passive");
+        $(".nav_bar ul").addClass("active");
     })
     
 });

@@ -21,6 +21,9 @@
     ul.active{
         display: block;
     }
+    ul.passive{
+        display:none;
+    }
     .nav_bar ul li:nth-child(n+2)::before{
         display: none;
     }
