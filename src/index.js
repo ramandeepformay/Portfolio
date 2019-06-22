@@ -25,10 +25,18 @@ $(function(){
         contain: true
       });
     $("a").smoothScroll({
-        offset:0,
+        offset:-50,
         speed:600,
         easing:"swing"
     });
+    $(".nav_bar ul li a").on("click", function(){
+        $(".nav_bar ul").hide();
+    })
+    $(".nav_toggle").on("click",function(){
+        $(".nav_bar ul").removeAttr("style");
+        $(".nav_bar ul").css({"display":"block"});
+    })
+    
 });
 
 

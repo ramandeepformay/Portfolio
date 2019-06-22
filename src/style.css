@@ -192,7 +192,6 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
   height: 100vh;
-  padding: 1px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,8 +205,9 @@ header {
   width: 100vw;
   margin: 0px auto;
   padding: 5px;
-  background-color: #4a7491c7;
-  position: fixed; }
+  background-color: black;
+  position: fixed;
+  z-index: 100; }
 
 .nav_bar ul {
   max-width: 550px;
@@ -865,9 +865,16 @@ footer {
 
 /* header */
 @media (max-width: 700px) {
+  .nav_head {
+    position: relative;
+    z-index: 120; }
   .nav_toggle {
     display: block; }
+  .nav_bar {
+    position: fixed;
+    top: 50px; }
   .nav_bar ul {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -880,6 +887,9 @@ footer {
     display: block; }
   .nav_bar ul li:nth-child(n+2)::before {
     display: none; }
+  .nav_bar ul li a {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px; }
   .myHead h1 {
     font-size: 4.5rem; }
   .myHead span {
