@@ -41,6 +41,10 @@
 }
 //section 1 starts//
 @media(max-width:790px){
+    header{
+        background:url(../../assets/image-1-mobile.jpg) center no-repeat fixed;
+        background-size:cover;
+    }
     .des_media{
         max-width: 600px;
         width: 100%;
