@@ -9,6 +9,7 @@ document.querySelector(".fas").addEventListener("click", click);
 function click(e){
     e.preventDefault();
     const menu = document.querySelector("ul").classList.toggle("active");
+
 }
 
 //flickity and smoothscrolling
@@ -37,6 +38,7 @@ $(function(){
         $(".nav_bar ul").removeClass("passive");
         $(".nav_bar ul").addClass("active");
     })
+    
     
 });
 
